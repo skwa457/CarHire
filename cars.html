@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Vintage Car Hire</title>
+    <style>
+      header, main, footer {
+        margin: 20px;
+      }
+      h2 {
+        padding-top: 2px;
+        text-align: center;
+      }
+      footer {
+        text-align: center;
+      }
+      #car-sect, #enquiry-sect, #contact-sect {
+        margin-top: 5px;
+        padding-top: 5px;
+      }
+      #background-container {
+        background-color: #cbeeff;
+        margin-left: 15px;
+        padding-left: 5px;
+        padding-bottom: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand mb-0 h1" href="#">
+        <img src="images/logo.png" width="40" height="35" class="d-inline-block align-top" alt="logo">
+        VintCars
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#car-sect">Cars</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#enquiry-sect">Enquires</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-sect">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <h2>Vintage Cars for Hire</h2>
+    </header>
+
+    <main>
+    <!-- Cars Section -->
+    <div class="container-fluid">
+      <h3 id="car-sect">Car Listings</h3>
+      <div class="row">
+        <div class="col-auto">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="../images/cadillac.jpg" alt="Cadillac car">
+            <div class="card-body">
+              <h5 class="card-title">Cadillac</h5>
+              <p class="card-text">Colour: Beige <br> Year: 1970 <br>Kilometres: 150,000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-auto">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/images/sports.jpg" alt="Sports car">
+            <div class="card-body">
+              <h5 class="card-title">Sports</h5>
+              <p class="card-text">Colour: Red <br> Year: 1979 <br>Kilometres: 100,000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-auto">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/racing.jpg" alt="Racing car">
+            <div class="card-body">
+              <h5 class="card-title">Racing</h5>
+              <p class="card-text">Colour: White <br> Year: 1980 <br>Kilometres: 250,000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-auto">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/beetle.jpg" alt="Beetle car">
+            <div class="card-body">
+              <h5 class="card-title">Beetle</h5>
+              <p class="card-text">Colour: Blue <br> Year: 1975 <br>Kilometres: 190,000</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Enquires Section -->
+    <div class="container-fluid col-8" id="background-container">
+      <h3 id="enquiry-sect">Enquires</h3>
+      <form id="background">
+        <div class="form-group">
+          <label for="formFullName">Full Name</label>
+          <input type="text" class="form-control" id="formGroupNameInput">
+        </div>
+
+        <div class="form-group">
+          <label for="formEmailInput">Email address</label>
+          <input type="email" class="form-control" id="formEmailInput">
+        </div>
+
+        <div class="form-group">
+          <label for="formSelect">Choose a Car</label>
+          <br>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Cadillac</option>
+            <option value="1">Sports</option>
+            <option value="2">Racing</option>
+            <option value="3">Beetle</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="formTextArea">Comment</label>
+          <textarea class="form-control" id="formTextArea" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container-fluid">
+      <h3 id="contact-sect">Contact</h3>
+      <p>Vintcars <br> 123 North Road, Melbourne, VIC 1234 <br> +61429382942 <br> vintcars@gmail.com</p>
+    </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>© VintCars 2021</p>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
